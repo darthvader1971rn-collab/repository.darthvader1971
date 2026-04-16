@@ -1,49 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons><addon id="plugin.video.iptv3" name="IPTV 3.0" version="1.0.1" provider-name="DarthVader1971">
-
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" version="2.25.1" />
-        <import addon="inputstream.adaptive" version="21.0.0" />
-    </requires>
-
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="pl-pl">Wtyczka IPTV 3.0</summary>
-        <summary lang="en-gb">IPTV 3.0 Addon</summary>
-
-        <description lang="pl-pl">
+<addons>
+    <addon id="plugin.video.iptv3" name="IPTV 3.0" version="1.0.2" provider-name="DarthVader1971">
+        <requires>
+            <import addon="xbmc.python" version="3.0.0"/>
+            <import addon="script.module.requests" version="2.25.1"/>
+            <import addon="inputstream.adaptive" version="21.0.0"/>
+            <import addon="inputstream.ffmpegdirect" version="21.0.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="main.py">
+            <provides>video</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="pl-pl">Wtyczka IPTV 3.0</summary>
+            <summary lang="en-gb">IPTV 3.0 Addon</summary>
+            <description lang="pl-pl">
             Modularny, odporny i inteligentny system odtwarzania IPTV.
         </description>
-        <description lang="en-gb">
+            <description lang="en-gb">
             Modular, resilient and intelligent IPTV playback system.
         </description>
-
-        <platform>all</platform>
-
-        <language>pl-pl</language>
-        <language>en-gb</language>
-
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-
-</addon><addon id="repository.darthvader1971" name="DarthVader1971 Repository" version="1.0.0" provider-name="DarthVader1971">
-    <extension point="xbmc.addon.repository" name="DarthVader1971 Repository">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/darthvader1971rn-collab/repository.darthvader1971/main/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/darthvader1971rn-collab/repository.darthvader1971/main/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/darthvader1971rn-collab/repository.darthvader1971/main/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Oficjalne repozytorium DarthVader1971</summary>
-        <description>Zainstaluj to repozytorium, aby otrzymywać automatyczne aktualizacje wtyczki IPTV i innych projektów bezpośrednio na swoim urządzeniu.</description>
-        <platform>all</platform>
-    </extension>
-</addon></addons>
+            <platform>all</platform>
+            <language>pl-pl</language>
+            <language>en-gb</language>
+            <assets>
+                <icon>icon.png</icon>
+                <fanart>fanart.jpg</fanart>
+            </assets>
+        </extension>
+    </addon>
+</addons>
