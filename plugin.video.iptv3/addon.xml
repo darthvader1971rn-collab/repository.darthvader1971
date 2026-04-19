@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="plugin.video.iptv3"
        name="IPTV 3.0"
-       version="1.0.2"
+       version="1.0.4"
        provider-name="DarthVader1971">
 
     <requires>
